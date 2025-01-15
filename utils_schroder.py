@@ -10,8 +10,6 @@ calculating patient satisfaction and other statistics for healthcare organizatio
 
 Author: Justin Schroder
 
-TODO: Change the module name in this opening docstring
-TODO: Change the author in this opening docstring
 """
 
 #####################################
