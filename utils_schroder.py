@@ -9,7 +9,6 @@ and reuse common data analytics tasks related to healthcare data, such as
 calculating patient satisfaction and other statistics for healthcare organizations.
 
 Author: Justin Schroder
-
 """
 
 #####################################
@@ -46,16 +45,20 @@ departments: list = ["Cardiology", "Neurology", "Orthopedics", "Pediatrics"]
 patient_satisfaction_scores: list = [4.8, 4.7, 4.9, 5.0, 4.6, 4.8]
 
 # Calculate basic statistics using built-in Python functions and the statistics module
-# TODO: Replace these variable names with the variable name of your own numeric list
-min_score: float = min(client_satisfaction_scores)  
-max_score: float = max(client_satisfaction_scores)  
-mean_score: float = statistics.mean(client_satisfaction_scores)  
-stdev_score: float = statistics.stdev(client_satisfaction_scores)
+# Calculate basic statistics using the patient satisfaction scores list
+min_satisfaction: float = min(patient_satisfaction_scores)  
+max_satisfaction: float = max(patient_satisfaction_scores)  
+mean_satisfaction: float = statistics.mean(patient_satisfaction_scores) 
+median_satisfaction: float = statistics.median(patient_satisfaction_scores)  
+stdev_satisfaction: float = statistics.stdev(patient_satisfaction_scores)
+
 
 # Use a Python formatted string (f-string) to show information
 # TODO: Modify the text in the byline to fit your information
 # TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
+---------------------------------------------------------
+Schroder Healthcare Analytics: Enhancing Patient Care through Data
 ---------------------------------------------------------
 Hospital Excellent:             {is_hospital_excellent}
 Emergency Department Open:     {is_emergency_department_open}
@@ -123,5 +126,4 @@ if __name__ == '__main__':
     main()
 
 #TODO: Run this as a script and verify all code works as intended.
-
 
