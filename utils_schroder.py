@@ -1,14 +1,16 @@
 """
-Module: utils_schroder_healthcare_analytics.py
+Module: utils_case
 
-Purpose: Reusable module for healthcare analytics projects.
+Purpose: Reusable Module for My Analytics Projects
 
-Description: This module provides essential statistics and byline information 
-for Schroder Healthcare Analytics. The purpose of the module is to simplify 
-and reuse common data analytics tasks related to healthcare data, such as 
-calculating patient satisfaction and other statistics for healthcare organizations.
+Description: This module provides a byline for my analytics projects. 
+When we work hard to write useful code, we want it to be reusable.
+A good byline could be used in every Python analytics project we do.
 
-Author: Justin Schroder
+Author: Denise Case
+
+TODO: Change the module name in this opening docstring
+TODO: Change the author in this opening docstring
 """
 
 #####################################
@@ -25,52 +27,47 @@ import statistics  # provides mean(), stdev() and more....
 #####################################
 
 # declare a boolean variable (has a value True or False)
-#Is the hospital considered excellent?/Is the emergency department open?
-is_hospital_excellent: bool = True
-is_emergency_department_open: bool = False
+# TODO: Add another or replace this with your own boolean variable
+has_international_clients: bool = True
 
-# Integer variable: Number of patients served
-number_of_patients: int = 15000
+# declare an integer variable 
+# TODO: Add or replace this with your own integer variable
+years_in_operation: int = 10
 
 # declare a floating point variable
 # TODO: Add or replace this with your own floating point variable
 average_client_satisfaction: float = 4.7
 
 # declare a list of strings
-# List of strings: Healthcare departments 
-departments: list = ["Cardiology", "Neurology", "Orthopedics", "Pediatrics"]
+# TODO: Add or replace this with your own list  
+skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
 
 # declare a list of numbers so we can illustrate statistics skills
-# List of floats: Patient satisfaction scores (out of 5)
-patient_satisfaction_scores: list = [4.8, 4.7, 4.9, 5.0, 4.6, 4.8]
+# TODO: Add or replace this with your own numeric list  
+client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
 
 # Calculate basic statistics using built-in Python functions and the statistics module
-# Calculate basic statistics using the patient satisfaction scores list
-min_satisfaction: float = min(patient_satisfaction_scores)  
-max_satisfaction: float = max(patient_satisfaction_scores)  
-mean_satisfaction: float = statistics.mean(patient_satisfaction_scores) 
-median_satisfaction: float = statistics.median(patient_satisfaction_scores)  
-stdev_satisfaction: float = statistics.stdev(patient_satisfaction_scores)
-
+# TODO: Replace these variable names with the variable name of your own numeric list
+min_score: float = min(client_satisfaction_scores)  
+max_score: float = max(client_satisfaction_scores)  
+mean_score: float = statistics.mean(client_satisfaction_scores)  
+stdev_score: float = statistics.stdev(client_satisfaction_scores)
 
 # Use a Python formatted string (f-string) to show information
 # TODO: Modify the text in the byline to fit your information
 # TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
-Schroder Healthcare Analytics: Enhancing Patient Care through Data
+Stellar Analytics: Delivering Professional Insights
 ---------------------------------------------------------
-Hospital Excellent:             {is_hospital_excellent}
-Emergency Department Open:     {is_emergency_department_open}
-Number of Patients:            {number_of_patients}
-Departments:                   {departments}
-Patient Satisfaction Scores:   {patient_satisfaction_scores}
-Minimum Satisfaction Score:   {min_satisfaction}
-Maximum Satisfaction Score:   {max_satisfaction}
-Mean Satisfaction Score:      {mean_satisfaction:.2f}
-Standard Deviation of Satisfaction Scores: {stdev_satisfaction:.2f}
----------------------------------------------------------
-Delivering actionable insights to improve healthcare outcomes.
+Has International Clients:  {has_international_clients}
+Years in Operation:         {years_in_operation}
+Skills Offered:             {skills_offered}
+Client Satisfaction Scores: {client_satisfaction_scores}
+Minimum Satisfaction Score: {min_score}
+Maximum Satisfaction Score: {max_score}
+Mean Satisfaction Score: {mean_score:.2f}
+Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
 """
 
 #####################################
@@ -126,4 +123,5 @@ if __name__ == '__main__':
     main()
 
 #TODO: Run this as a script and verify all code works as intended.
+
 
