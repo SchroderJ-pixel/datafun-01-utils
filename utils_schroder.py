@@ -1,11 +1,12 @@
 """
 Module: utils_schroder_healthcare_analytics.py
 
-Purpose: Reusable Module for My Analytics Projects
+Purpose: Reusable module for healthcare analytics projects.
 
-Description: This module provides a byline for my analytics projects. 
-When we work hard to write useful code, we want it to be reusable.
-A good byline could be used in every Python analytics project we do.
+Description: This module provides essential statistics and byline information 
+for Schroder Healthcare Analytics. The purpose of the module is to simplify 
+and reuse common data analytics tasks related to healthcare data, such as 
+calculating patient satisfaction and other statistics for healthcare organizations.
 
 Author: Justin Schroder
 
