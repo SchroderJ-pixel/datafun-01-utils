@@ -58,16 +58,17 @@ stdev_score: float = statistics.stdev(client_satisfaction_scores)
 # TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
-Stellar Analytics: Delivering Professional Insights
+Hospital Excellent:             {is_hospital_excellent}
+Emergency Department Open:     {is_emergency_department_open}
+Number of Patients:            {number_of_patients}
+Departments:                   {departments}
+Patient Satisfaction Scores:   {patient_satisfaction_scores}
+Minimum Satisfaction Score:   {min_satisfaction}
+Maximum Satisfaction Score:   {max_satisfaction}
+Mean Satisfaction Score:      {mean_satisfaction:.2f}
+Standard Deviation of Satisfaction Scores: {stdev_satisfaction:.2f}
 ---------------------------------------------------------
-Has International Clients:  {has_international_clients}
-Years in Operation:         {years_in_operation}
-Skills Offered:             {skills_offered}
-Client Satisfaction Scores: {client_satisfaction_scores}
-Minimum Satisfaction Score: {min_score}
-Maximum Satisfaction Score: {max_score}
-Mean Satisfaction Score: {mean_score:.2f}
-Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
+Delivering actionable insights to improve healthcare outcomes.
 """
 
 #####################################
